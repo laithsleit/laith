@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        body {
+            background-color: cornsilk;
+        }
+        .tl {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+            border: solid rgba(0, 0, 0, 0.201) 1px;
+            background-color: aqua;
+
+
+        }
+        .tl:nth-child(1){
+            border-bottom: solid black 1px ;
+            border-right: solid black 1px ;
+        }
+        .tl:nth-child(1){
+            border-bottom: solid black 1px ;
+            border-right: solid black 1px ;
+        }
+        .tl:nth-child(4){
+            border-top: solid black 1px ;
+            border-left: solid black 1px ;
+        }
+        .tr1{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr ;
+            background-color: aqua;
+
+        }
+        .tr{
+            display: grid;
+            grid-template-columns: 1fr  ;
+            grid-template-rows: 1fr 1fr ;
+            background-color: aqua;
+
+        }  
+        #green {
+            background-color: chartreuse;
+        }  
+        .top {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-template-rows: 1fr ;
+            grid-gap: 10%;
+            margin-top: 1%;
+            
+        }
+        .buttom {
+            display: grid;
+            grid-template-columns:  1fr  ;
+            grid-template-rows: 1fr 1fr  ;
+        }
+        .bar {
+            display: grid;
+            grid-template-columns:  2fr 1fr  ;
+            grid-template-rows: 1fr  ;
+            justify-content: space-between;
+            border-bottom: solid rgba(0, 0, 0, 0.126) 1px;
+            
+        
+        }
+        .bl {
+            border: solid rgba(0, 0, 0, 0.126) 1px;
+            width:100%;
+            margin-top: 1%;
+            background-color: aqua;
+        }
+        .br {
+            width: 100%;
+        }
+        .redb {
+            background-color: red;
+            color: white;
+        }
+        .greenb {
+            background-color: green;
+            color: white;    
+        }
+        .brr,.brl {
+            display: grid;
+            grid-template-columns:   1fr  ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-gap: 3%;
+        }
+        .bo {
+            background-color: aqua;
+
+        }
+        .buttom {
+            display: grid;
+            grid-template-columns:   1fr 1fr  ;
+            grid-template-rows:  1fr ;
+            grid-gap: 3%; 
+        }
+        @media (max-width: 650px) {
+            .buttom {
+            grid-template-columns:   1fr    ;
+            grid-template-rows:  1fr 1fr ;
+        }
+        .top {
+            grid-template-columns:  1fr  ;
+            grid-template-rows:1fr 1fr 1fr ;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="top">
+        <div class="boxes">
+                <div class="tl">
+            
+                    <div style="color: blue;">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                      <h3>10k</h3>
+                       <p>vistors</p>
+                    </div>    
+                </div>
+
+                <div class="tl">
+                    <div style="color: blue;">
+                      <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                        <h3>10k</h3>
+                        <p>vistors</p>
+                    </div>    
+                </div>
+
+                <div class="tl">
+                    <div style="color: blue;">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                        <h3>10k</h3>
+                        <p>vistors</p>
+                    </div>    
+                </div>
+                
+                <div class="tl">
+                    <div style="color: blue;">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                        <h3>10k</h3>
+                        <p>vistors</p>
+                    </div>    
+                </div>
+        </div>
+        
+        <div class="tc">
+
+            <div class="boxes">
+                <div class="tl">
+            
+                    <div style="color: blue;">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                      <h3>10k</h3>
+                       <p>vistors</p>
+                    </div>    
+                </div>
+
+                <div class="tl">
+                    <div style="color: blue;">
+                      <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                        <h3>10k</h3>
+                        <p>vistors</p>
+                    </div>    
+                </div>
+
+                <div class="tl">
+                    <div style="color: blue;">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                        <h3>10k</h3>
+                        <p>vistors</p>
+                    </div>    
+                </div>
+                
+                <div class="tl">
+                    <div style="color: blue;">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div>
+                        <h3>10k</h3>
+                        <p>vistors</p>
+                    </div>    
+                </div>
+        </div>
+
+        </div>
+        <div class="tr">
+            <div class="tr1">
+                <div style="background-color: blue;"><i class="fa-regular fa-star"></i></div>
+                <div>
+                    <h3>4000+</h3>
+                    <p>ratings receved</p>
+                </div>
+            </div>
+
+            <div class="tr1" id="green">
+
+                <div style="background-color: green;"><i class="fa-regular fa-star"></i></div>
+                <div>
+                    <h3>4000+</h3>
+                    <p>ratings receved</p>
+                </div>
+
+            </div>    
+            
+            
+            
+        </div>
+
+    </div>
+
+     
+    <div class="buttom">
+
+        <div class="bl">
+
+            <div>
+
+                <div>
+                    <p style="text-align: left;">members oermance</p>
+                </div>
+                <div class="bar">
+                    <div class="bll">
+            
+                        <div style="color: blue;">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+                        <div>
+                          <h3>10k</h3>
+                           <p>vistors</p>
+                        </div>    
+                    </div>  
+
+                    <p><b>700</b></p>
+                </div>
+                <div>
+                    <div class="bar">
+                        <div class="bll">
+                
+                            <div style="color: blue;">
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <div>
+                              <h3>10k</h3>
+                               <p>vistors</p>
+                            </div>    
+                        </div>  
+    
+                        <p><b>700</b></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bar">
+                        <div class="bll">
+                
+                            <div style="color: blue;">
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <div>
+                              <h3>10k</h3>
+                               <p>vistors</p>
+                            </div>    
+                        </div>  
+    
+                        <p><b>700</b></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bar">
+                        <div class="bll">
+                
+                            <div style="color: blue;">
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <div>
+                              <h3>10k</h3>
+                               <p>vistors</p>
+                            </div>    
+                        </div>  
+    
+                        <p><b>700</b></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="br">
+            <div class="brr">
+                <div class="bo">
+                    <p>total subscription</p>
+                    <p>7652</p>
+                    <p style="font-size: small;">48% from last 24 h</p>
+                </div>
+                <div class="redb ">
+                    <p style="direction: rtl;">15%</p>
+                    <p>489</p>
+                    <p>total comment</p>
+                </div>
+                <div class="bo">
+                    <p>total subscription</p>
+                    <p>7652</p>
+                    <p style="font-size: small;">48% from last 24 h</p>
+                </div>
+            </div>
+            <div class="brl">
+             <div class="bo">
+                <p>total subscription</p>
+                <p>7652</p>
+                <p style="font-size: small;">48% from last 24 h</p>
+            </div>
+            <div class="greenb ">
+                <p style="direction: rtl;">15%</p>
+                <p>489</p>
+                <p>total comment</p>
+            </div>
+            <div class="bo">
+                <p>total subscription</p>
+                <p>7652</p>
+                <p style="font-size: small;">48% from last 24 h</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

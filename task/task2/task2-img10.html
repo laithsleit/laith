@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task2</title>
+  <style>
+   
+   input,select{
+              margin: 10px;
+
+        }
+        fieldset{
+                  
+                  
+                  text-align: left;
+                  width: 50%;
+                }
+                 
+
+    </style>
+</head>
+<body>
+       <h1>Registration Form</h1>
+
+    <fieldset>
+     
+       <form>
+        User Id:  <input type="text" name="username"> <br>
+        
+        Password: <input type="password" name="password" min="8" max="20"> <br>
+        
+        Name:     <input type="text" name="name"> <br>
+        
+        Address:  <input type="text" name="address"> <br>
+        
+        Contry  <select name="contry" id="contry"> <br>
+            <option value="contry">jordan</option>
+            <option value="contry">palestine</option>
+            <option value="contry">USA</option>
+            <option value="contry">Egypt</option> 
+        </select> <br>
+        Zip Code: <input type="number" name="zipcode" max="5" maxlength="5"> <br>
+        
+        Address:  <input type="text" name="address"> <br>
+        
+        Email:    <input type="email" name="email"> <br>
+
+        SEX:      <input type="radio" name="sex" id="male" >Male
+                  <input type="radio" name="sex" id="female">Female <br>
+        
+        Language: <input type="checkbox" name="eng" checked>English
+                  <input type="checkbox" name="non-eng" >Non-English <br>
+
+        About:    <br>  <textarea cols="50" rows="7">  </textarea>  <br>      
+
+                  <input type="submit" value="submit">
+      
+    </form>
+    
+    </fieldset>
+
+</body>
+</html>

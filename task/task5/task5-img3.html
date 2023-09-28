@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    #container {
+        margin: 100px 0px 0px 0px;
+        
+        
+    }
+    #top {
+        
+        margin: 0px;
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr );
+        grid-template-rows: auto auto ;
+        grid-template-areas:"logo logo a1 a2" " logo logo a3 a4"  ;
+
+    }
+
+    #a1 {
+        background-image: url('no.png');
+        background-size: cover;
+        grid-area: logo;
+        
+    }
+    #b1 {
+        background-image: url('fam.png');
+        background-size: cover;
+        grid-area:a1 ;
+    }
+    #c1 {
+        background-image: url('no.png');
+        background-size: cover;
+        background-color: green;
+        grid-area: a2;
+    }
+    #d1 {
+        background-image: url('no.png');
+        background-size: cover;
+        background-color: rgb(227, 48, 48);
+        grid-area:a3;
+    }
+    #e1 {
+        background-image: url('opho.png');
+        background-size: cover;
+        background-color: rgb(48, 48, 168);
+        grid-area:a4;
+    }
+
+    #buttom {
+        background-color: rgb(186, 176, 176);
+
+        margin: 0px ;
+        width: 100% ;
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr );
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:" f g h i m "  ;
+        
+        
+
+    }
+    #a2 {
+        margin: 10px;
+        grid-area:f;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        display: flex;
+
+        
+        
+        
+    }
+    #b2 {
+        margin: 10px;
+        grid-area: g;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        
+    }
+    #c2 {
+        margin: 10px;
+        grid-area: h;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        
+    }
+    #d2 {
+        margin: 10px;
+        grid-area: i;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        
+    }
+    #e2 {
+        margin: 10px;
+        grid-area: m;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        
+    }
+    .smolp{
+       padding: 20px;
+       
+    }
+    h1 {
+        font-size: 50px;
+        color: orangered;
+    }
+    .offf {
+        font-size: 40px;
+        color: white;
+        display: flex;
+        align-content: space-around;
+       
+
+    }
+    h2 { 
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="top">
+            <div id="a1">
+                <h1>Offers and Services</h1>
+                <p class="offf">
+                    Stay connected to people in your life
+                </p>
+                <p class="offf">
+                    Best 4G+ and unlimited Internet bundles and features with Orange Mobile Lines
+                </p>
+            </div>
+            <div id="b1">2</div>
+            <div id="c1">
+                <h2>orange extra</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicinelia obcaecati harum maiores similiqu</p>
+            </div>
+            <div id="d1"> 
+                <h2>orange extra
+                </h2>
+            </div>
+
+            <div id="e1">5</div>
+
+
+        </div>
+        <div id="buttom">
+            <div id="a2">
+                <img src="screen.png" alt="">
+                <p class="smolp">mobile offers</p>
+            </div>
+            <div id="b2">
+                <img src="screen.png" alt="">
+                <p class="smolp">mobile offers</p>
+            </div>
+            <div id="c2">
+                <img src="screen.png" alt="">
+                <p class="smolp">mobile offers</p>
+            </div>
+            <div id="d2">
+                <img src="screen.png" alt="">
+                <p class="smolp">mobile offers</p>
+            </div>
+            <div id="e2">
+                <img src="screen.png" alt="">
+                <p class="smolp">mobile offers</p>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

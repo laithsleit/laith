@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      @-ms-viewport{
+        width: device-width;
+      }
+      * {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+ul{
+    padding: 2vw 0%;
+    color: white;
+    background-color: #000000;
+    list-style-type: none;
+    align-self: center;
+}
+li {
+    display: inline;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+}
+.logo {
+  padding: 40px;
+  text-align: left;
+  background: #000000;
+  color: white;
+}
+.text {
+    width: 75%;
+}
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(1vw , auto);
+    grid-gap: 2%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: #000000 0.5vw solid;
+    width: 100%;
+
+}
+.cardh {
+    background-color: #000000;
+    color: white;
+}
+
+ .cont2 {
+    background-color: black;
+    color: white;
+    width: 25%;
+    margin-left: 1% ;
+    margin-right: 1% ;
+
+
+ }
+ .main {
+    display: flex;
+    width: 100%;
+
+ }
+ .cont1 {
+    width: 100%;
+    height: 800px;
+    margin-left: 1%;
+
+ }
+
+@media (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cont1 {
+    width: 100%;
+  }
+
+  .cont2 {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+ 
+   .cards{ 
+    grid-template-columns: auto ;
+    grid-auto-rows: minmax(1vw , auto);
+    margin-bottom: 10%;
+   }
+  .main {
+    flex-direction: column;
+  } 
+}
+
+     
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+        <h1>My Website</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>link 1</li>
+                <li>link 2</li>
+                <li>link 3</li>
+
+            </ul>
+        </div>
+    </div>
+<br>
+    <div class="main">
+
+        <div class="cont1">
+           
+            <div class="text">
+
+                <h1>This is the main heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum iure possimus vitae eum, mollitia nam ipsum incidunt accusamus, voluptates quae quaerat optio harum nesciunt voluptatem ratione quidem nisi totam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem voluptatum porro at omnis ea saepe magnam voluptatibus, magni accusantium excepturi inventore rerum repudiandae asperiores. Numquam tempora incidunt veritatis cumque.</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    
+                    <div class="cardh">
+                        <h1>card one</h1>
+                    </div>
+                    <div class="cardb">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem itaque fuga expedita id, quo quas? Possimus expedita temporibus cupiditate accusantium harum consequatur, doloribus quos soluta tempore sed, veritatis saepe.
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    
+                    <div class="cardh">
+                        <h1>card two</h1>
+                    </div>
+                    <div class="cardb">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem itaque fuga expedita id, quo quas? Possimus expedita temporibus cupiditate accusantium harum consequatur, doloribus quos soluta tempore sed, veritatis saepe.
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    
+                    <div class="cardh">
+                        <h1>card 3</h1>
+                    </div>
+                    <div class="cardb">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem itaque fuga expedita id, quo quas? Possimus expedita temporibus cupiditate accusantium harum consequatur, doloribus quos soluta tempore sed, veritatis saepe.
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    
+                    <div class="cardh">
+                        <h1>card 4</h1>
+                    </div>
+                    <div class="cardb">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem itaque fuga expedita id, quo quas? Possimus expedita temporibus cupiditate accusantium harum consequatur, doloribus quos soluta tempore sed, veritatis saepe.
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    
+                    <div class="cardh">
+                        <h1>card 5</h1>
+                    </div>
+                    <div class="cardb">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatem itaque fuga expedita id, quo quas? Possimus expedita temporibus cupiditate accusantium harum consequatur, doloribus quos soluta tempore sed, veritatis saepe.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cont2">
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus unde dolorum numquam illo fugiat delectus ex harum cupiditate eos provident impedit eum consectetur, magni ab accusantium et totam assumenda voluptatibus.
+
+        </div>
+
+    </div>
+      
+
+</body>
+</html>

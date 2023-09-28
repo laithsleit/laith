@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Normalize */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        .header2 {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 7%;
+            margin-top: 1%;
+            margin-bottom: 3%;
+
+        }
+
+        /* Navbar */
+        .nav-bar {
+            grid-area: 1 / 2 / 2 / 4;
+        }
+
+        /* Icons */
+        .icons {
+            grid-area: 1 / 5/ 2 / 8;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1%;
+        }
+
+        /* Price */
+        #price {
+            grid-area: 1 / 3 / 2 / 5;
+        }
+
+        /* Nav */
+        .nav {
+            display: grid;
+            grid-template-columns: repeat(5, 8vw);
+            list-style-type: none;
+        }
+
+        /* Nav items */
+        .nav-item {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: rgb(0, 89, 255);
+            }
+        }
+
+        /* Department box */
+        .dep {
+            border: 1px solid black;
+            width: 55%;
+            text-align: center;
+            margin-top: 1%;
+            height: 30vw;
+        }
+
+        /* Department header */
+        .deph {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr;
+            background-color: rgb(0, 89, 255);
+            font-size: 70%;
+            padding: 3%;
+        }
+
+        /* Search box */
+        .search {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        /* Category box */
+        .cat {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        /* Support box */
+        .sup {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin-left: 10%;
+            width: 28%;
+        }
+
+        /* Container 1 */
+        .cont1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            margin-bottom: 2%;
+        }
+
+        /* Container 2 */
+        .cont2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1%;
+            width: 79%;
+            margin-left: 12.5%;
+        }
+
+        /* Card */
+        .card {
+            padding: 10px;
+            background-image: url("cat-1.jpg");
+            background-size: cover;
+            padding-top: 50%;
+
+
+        }
+
+        /* Green text */
+        .greenf {
+            color: green;
+        }
+
+        .greenb {
+            background-color: green;
+            width: 20%;
+        }
+
+        .img {
+        background-image: url(banner.jpg);
+        background-size: contain;
+        height: 85%;
+        width: 53vw;
+        padding-left: 3%;
+        font-size: 2vw;
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+       
+
+        .left {
+            width: 31vw;
+            overflow: hidden;
+        }
+
+        .shop {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-auto-rows: 1fr;
+            margin-top: 3%;
+            width: 64vw;
+        }
+
+        .cont1 {
+            display: grid;
+            grid-template-columns: 4fr 4fr;
+            padding-left: 5%;
+        }
+
+        .texti {
+            background-color: aliceblue;
+            text-align: center;
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 1fr;
+        }
+        @media (max-width: 650px) {
+            
+            .left {
+                display: none ;
+                
+            }
+            .dep {
+                border: none;
+            }
+            .main{
+                grid-gap: 15%;
+                width: 100%;
+            }
+            .cont2{
+            margin-right: 10vw;
+            grid-template-columns: repeat(auto, 1fr);
+        }
+        .img {
+            width: 145%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+    }
+    @media (max-width: 600px){
+        .cont2{
+            margin-right: 10vw;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .sup {
+            display: none;
+        }
+        .main{
+                width: 100%;
+                grid-gap: 10%;
+                grid-template-rows: 0.5fr 1fr;
+        }
+        .right {
+                width: 100%;
+                padding: 0 10vw;
+        }
+        .cont2 {
+            width: 80vw;
+        }
+        .img {
+            width: 118%;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+     <!-- Header Start -->
+     <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+          <div class="site-header__start">
+            <a href="#" class="brand">Laith</a>
+          </div>
+          <div class="site-header__middle">
+            <nav class="nav">
+              <button class="nav__toggle" aria-expanded="false" type="button">
+                menu
+              </button>
+              <ul class="nav__wrapper">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">About</a></li>
+                <li class="nav__item"><a href="#">Services</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="site-header__end">
+            <a href="#">Sign in</a>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+
+    <div class="header2">
+
+        <div class="icons">
+
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="price">item: <b>$150.00</b> </p>
+
+        </div>
+
+        <div class="nav-bar">
+            <ul class="nav">
+                <li class="nav-item" id="home"><a href="#home">home</a></li>
+                <li class="nav-item"><a href="#home">shop</a></li>
+                <li class="nav-item"><a href="#home">pages</a></li>
+                <li class="nav-item"><a href="#home">blog</a></li>
+                <li class="nav-item"><a href="#home">contant</a></li>
+
+            </ul>
+        </div>
+
+
+
+    </div>
+    <div class="main">
+
+        <div class="cont1">
+            <div class="left">
+
+                <div class="dep">
+
+                    <div class="deph">
+
+                        <i class="fa-solid fa-list"></i>
+                        <p><b>departments</b></p>
+                        <i class="fa-solid fa-arrow-down"></i>
+
+                    </div>
+                    <div class="depb">
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                        <p>fresh meat</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="shop">
+
+                    <div class="search">
+                        <div class="cat">
+                            <p>categories</p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div style="color: rgba(0, 0, 0, 0.555);border-right: solid black 1px;">
+                            <p>what do u need?</p>
+                        </div>
+
+                        <div style="background-color: rgb(0, 89, 255); text-align: center;">
+                            <p>search</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="sup">
+
+                        <div><i class="fa-solid fa-phone fa-xl"></i></div>
+                        <div style="color:  rgba(0, 0, 0, 0.555);">
+                            <p>+6511.188.88</p>
+                            <p>suport 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="img">
+                    <p class="greenf">fruit fresh</p>
+                    <h1>vegetable <br> 100% organic</h1>
+                    <p>free pikup and delivery</p>
+                    <p style="text-align: center;" class="greenb">shop now</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont2">
+
+            <div class="card">
+
+                <p class="texti">vegetable</p>
+
+
+            </div>
+
+            <div class="card">
+
+                <p class="texti"> drink friits</p>
+
+            </div>
+
+            <div class="card">
+
+                <p class="texti">drink fruits</p>
+
+            </div>
+
+            <div class="card">
+
+                <p class="texti">fresh fruits</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+   
+   <style>
+
+    /*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+        */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a a b b" "c c d d";
+}
+
+h2 {
+  grid-area: logo;
+  background-color: red;
+  color: white;
+}
+nav {
+  grid-area: nav;
+  background-color: blue;
+  color: white;
+}
+section {
+  grid-area: cont;
+  background-color: yellow;
+  color: white;
+}
+#a {
+  grid-area: a;
+  background-color: yellow;
+
+
+}
+#b {
+  grid-area: b;
+  background-color: red;
+
+}
+#c {
+  grid-area: c;
+  background-color: orange;
+
+}
+#d {
+  grid-area: d;
+  background-color: pink;
+
+}
+
+
+
+
+
+   </style>
+</head>
+  <body>
+    <nav class="categories-bar">
+      <ul>
+        <li><a href="#">Phones</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Tablets</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </nav>
+    
+    <div class="page">
+      <h2>Elzero</h2>
+      <nav>
+        <ul>
+          <li id="a">Home</li>
+          <li id="b">About</li>
+          <li id="c">Services</li>
+          <li id="d">Contact</li>
+        </ul>
+      </nav>
+      <section>Content</section>
+    </div>
+  </body>
+</html>

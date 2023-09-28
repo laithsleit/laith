@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .row>* { 
+        max-width:fit-content;
+      }
+      
+      
+      @media (max-width:600px) {
+        .d-flex {
+        flex-direction: column;
+        }
+        .row ,.col-9 {
+          width: 100vw;
+        }
+
+      }
+    </style>
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+
+    <a class="navbar-brand" href="#" >
+      <img src="code--w.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      karma</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog <span class="sr-only"></span></a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pages <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contant<span class="sr-only"></span></a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+<!-- nav bar -->
+ 
+  
+  
+   
+ 
+   
+   <!-- button -->
+   <div class="container bg-body-secondary mx-auto w-75 px-2 ">
+       
+      <button type="button" class="btn btn-light ">Description</button>
+      <button type="button" class="btn btn-light ">specification</button>
+      <button type="button" class="btn btn-light ">comments</button>
+      <button type="button" class="btn btn-warning text-light">reviews</button>
+   </div>
+   <!-- button -->
+  <div class="d-flex justify-content-between">
+   
+   <div class="col-9 left pt-1 m-1 w-50">
+      <div class="row w50">
+        <div class="col w50">
+          <img src="overall.png" alt="">
+        </div>
+        <div class="col w50">
+          <div class="row w50">
+            <P><b>based on 3 reviews</b></P>
+          </div>
+          <div class="row w-auto ">
+            <img src="based.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row rev w-auto" >
+          <img src="rev.png" alt="">
+        </div>
+        <div class="row text-secondary">
+          <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis amet, pariatur assumenda eaque animi voluptatum aperiam illum suscipit nobis repudiandae dolor magnam labore ratione accusamus recusandae officia rerum nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi! Similique nihil debitis, aspernatur ipsam labore nostrum delectus modi minus eaque totam dicta eveniet enim quos deserunt et corrupti iste?</P>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row w-auto">
+          <img class="" src="rev.png" alt="" style="">
+        </div>
+        <div class="row text-secondary">
+          <P>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non id soluta necessitatibus vitae repellat sit temporibus unde dolore, facere consequuntur consequatur possimus autem architecto molestias, ratione ut labore quis. ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi! Similique nihil debitis, aspernatur ipsam labore nostrum delectus modi minus eaque totam dicta eveniet enim quos deserunt et corrupti iste?</P>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row w-auto">
+          <img src="rev.png" alt="">
+        </div>
+        <div class="row text-secondary">
+          <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa et non illo obcaecati distinctio cupiditate. Officia nihil ut et expedita, delectus laborum! Eaque nesciunt vitae vero similique deleniti quos temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi! Similique nihil debitis, aspernatur ipsam labore nostrum delectus modi minus eaque totam dicta eveniet enim quos deserunt et corrupti iste?</P>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="col-3 right w-50">
+      
+      <h1>Add  Review</h1><br>
+      <div style="display: inline-flex;" style="max-width: 40vw;">
+      your rating <img src="5star.png" alt=""> outstanding <br>
+     </div>
+      <form>
+        <div class="form-group" style="max-width: 40vw;">
+          <input type="text" class="form-control" id="fname" aria-describedby="nameHelp" placeholder="Enter youe first name">
+        </div>
+        <br>
+        <div class="form-group" style="max-width: 40vw;">
+          <input type="email" class="form-control" id="email" placeholder="email address">
+        </div>
+        <br>
+        <div class="form-check" style="max-width: 40vw;">
+          <input type="number" class="form-control" id="number" placeholder="enter your phonr number">
+        </div>
+        <br>
+        <textarea cols="20" rows="5" class="form-control" style="max-width: 40vw;"></textarea>
+        <button type="submit" class="btn btn-warning " style="max-width: 20vw;">SUMBIT NOW</button>
+      </form>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  
+    
+</body>
+</html>
